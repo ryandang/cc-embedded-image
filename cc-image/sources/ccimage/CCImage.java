@@ -11,31 +11,37 @@ public class CCImage
 
 	private Constants constants;
 	private CCImageMetadata metadata;
+	private URI uri;
 	
-	//constructor
-	public void CCImage() {}
+	//constructor	
+	public CCImage(URI data) {
+		uri = data;
+	}
+
+	public CCImage() {  	
+	}
 	
 	//check if image already have metadata
-	public boolean hasMetadata(URI uri) {
+	public boolean hasMetadata() {
 		return true;
 	}	
 	
 	//check if image already have license
-	public boolean hasLicense(URI uri) {
+	public boolean hasLicense() {
 		return true;
 	}
 
-	public void addImageMetadata (CCImageMetadata metadata, URI uri,  boolean overWrite, URI output) {}
-	
-	public void updateAuthorName(String name, URI uri) {}
-	public void updateLicense(License license, URI uri) {}
+	public void addImageMetadata (CCImageMetadata metadata, URI uri, URI output) {}
+	public void updateImageMetadata (CCImageMetadata metadata, URI uri, URI output) {}
+	public void updateAuthorName(String name) {}
+	public void updateLicense(License license) {}
 		
 	// extract metadata from image uri
-	public CCImageMetadata extractmetadata(URI uri) {
+	public CCImageMetadata extractmetadata() {
 		return metadata;
 	}
 
-	public String getImageType(URI uri) {
+	public String getImageType() {
 		return "png";
 	}
 
