@@ -18,6 +18,7 @@ public class Constants {
 	public static final String ATTRIBUTION_NONCOMMERCIAL_NODERIVS_LINK = "https://creativecommons.org/licenses/by-nc-nd/4.0/";
 	public static final String IMAGE_TYPE_PNG = "png";
 	public static final String IMAGE_TYPE_JPEG = "jpeg";
+	public static final String IMAGE_TYPE_GIF = "gif";
 }
 
 
