@@ -13,8 +13,8 @@ public class CCImageMetadata {
 	private License license;
 	
 	//constructor
-	public void CCImageMetadata() {}
-	public void CCImageMetadata(String author, License license, Date creationDate) {}
+	public CCImageMetadata() {}
+	public CCImageMetadata(String author, License license, Date creationDate) {}
 	//Get methods
 	public String getAuthor() {
 		return author;
